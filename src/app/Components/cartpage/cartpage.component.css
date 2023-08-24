@@ -1,0 +1,26 @@
+.cartpage{
+    position: fixed;
+    top:80px;
+    right: 20px;
+    left:20px;
+    margin: 10px;
+    text-align: center;
+}
+.cartitems{
+    width: 70%;
+    height: 85%;
+    margin:auto;
+    padding-top:10px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
+}
+.cartitem{
+    display: grid;
+    grid-template-columns: 200px 600px 100px 200px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+

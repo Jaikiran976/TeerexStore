@@ -1,0 +1,33 @@
+<aside class="filters">
+
+</aside>
+
+<main class="mainpage">
+
+    <section >
+        <input type="text" #input placeholder="Enter something" class="searchbar" (keyup.enter)="search(input.value)"><button (click)="search(input.value)">search</button>
+    </section>
+
+    <section class="productcards">
+
+        <section class="productcard" *ngFor="let product of showproducts">
+
+            <div class="product">
+                <img src={{product.imageURL}} class="image"/>
+
+                <div class="top-left">{{product.name}}</div>
+            </div>
+
+            <div class="productrates">      
+
+                <a class="rate">Rs {{product.price}}</a>
+
+                <button class="addtocart" (click)="addtocart(product)">Add to Cart</button>
+
+            </div>
+
+        </section>
+
+    </section>
+
+</main>

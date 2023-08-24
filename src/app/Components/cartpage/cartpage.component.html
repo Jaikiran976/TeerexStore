@@ -1,0 +1,14 @@
+<main class="cartpage">
+    <section class="cartitems">
+
+        <div style="position: absolute;font-size: 30px;;">
+            Shopping Cart
+        </div>
+
+        <section class="cartitem" *ngFor="let product of cartitems">   
+            <div>{{product.name}}</div>
+        </section>
+
+    </section>
+
+</main>
