@@ -1,11 +1,13 @@
 <aside class="filters">
-
 </aside>
 
 <main class="mainpage">
 
-    <section >
-        <input type="text" #input placeholder="Enter something" class="searchbar" (keyup.enter)="search(input.value)"><button (click)="search(input.value)">search</button>
+    <section>
+        <input type="text" #input placeholder="Enter something" class="searchbar" (keyup.enter)="search(input.value)">
+        <button (click)="search(input.value)" class="searchButton">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
     </section>
 
     <section class="productcards">
