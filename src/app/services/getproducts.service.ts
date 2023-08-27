@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class GetproductsService {
   cartlist:product[]=[];
+  cartcount:number=0;
   constructor(private http:HttpClient) { }
 
   getallproducts():Observable<product[]>
@@ -18,6 +19,12 @@ export class GetproductsService {
   addtocart(product:any)
   {
     this.cartlist.push(product);
+    this.cartcount+=1;
   }
-
+  removerfromcart(product:any)
+  {
+    var index = this.cartlist.findIndex((item: { id: any; }) => item.id == product.id);
+    this.cartlist.splice(index,1);
+    this.cartcount-=1;
+  }
 }

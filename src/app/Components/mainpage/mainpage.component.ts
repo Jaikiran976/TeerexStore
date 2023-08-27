@@ -1,6 +1,7 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { product } from 'src/app/product/product.module';
 import { GetproductsService } from 'src/app/services/getproducts.service';
+import { NavigationComponent } from '../navigation/navigation.component';
 
 @Component({
   selector: 'app-mainpage',

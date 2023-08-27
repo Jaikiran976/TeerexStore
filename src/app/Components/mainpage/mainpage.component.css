@@ -28,6 +28,7 @@
 
 .productcards{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
     padding: 30px 10px 10px;
